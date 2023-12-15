@@ -1,0 +1,32 @@
+MySQL:
+
+create schema lista default character set utf8;
+
+CREATE TABLE lista.alunos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(255),
+    telefone VARCHAR(255),
+    email VARCHAR(255),
+    matricula VARCHAR(255),
+    turma VARCHAR(255)
+);
+
+CREATE TABLE lista.registros (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(255),
+    telefone VARCHAR(255),
+    email VARCHAR(255),
+    matricula VARCHAR(255),
+    turma VARCHAR(255),
+    data_hora_entrada DATETIME,
+    data_hora_saida DATETIME
+);
+
+-- insert into lista.alunos(nome, telefone, email, matricula, turma)
+-- values ('Leonardo Cabral da Costa', '(91)993905108', 'leonardo.costa2@live.com', '201733840007', 'Fecomp-17');
+
+-- select * from lista.Registros;
+-- drop table lista.registros;
+
+-- select * from lista.alunos;
+-- drop table lista.alunos;
